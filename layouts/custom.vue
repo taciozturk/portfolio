@@ -1,0 +1,4 @@
+<template>
+  <h1>This is a custom layout</h1>
+  <slot />
+</template>
