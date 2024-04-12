@@ -2,6 +2,7 @@
 title: Exploratory Data Analysis
 description: Exploratory data analysis procedures in Python
 publishedAt: 2024-04-12 18:48:00
+toc: true
 ---
 
 # Exploratory Data Analysis

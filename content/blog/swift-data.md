@@ -2,6 +2,7 @@
 title: Swift Data
 description: Fundamentals of Swift Data
 publishedAt: 2023-04-12 18:48:00
+toc: true
 ---
 
 # Swift Data

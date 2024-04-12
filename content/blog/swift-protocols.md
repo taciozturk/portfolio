@@ -2,6 +2,7 @@
 title: Swift Protocols
 description: How to utilize Swift Protocols
 publishedAt: 2024-01-12 18:48:00
+toc: true
 ---
 
 # Swift Protocols
