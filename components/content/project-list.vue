@@ -1,9 +1,5 @@
 <template>
-  <div>
-    <h2 class="mb-10 font-medium text-xl">
-      Take a look at my github projects!
-    </h2>
-
+  <div class="not-prose">
     <section v-if="pending">Loading...</section>
     <section v-else-if="error">Something went wrong... Try again!</section>
     <section v-else>
