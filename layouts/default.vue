@@ -4,8 +4,8 @@
       <div class="text-xl text-primary font-semibold p-2 hover:bg-gray-200">
         <NuxtLink to="/">Taci Ozturk</NuxtLink>
       </div>
-      <Menu />
-      <ColorModeSelector/>
+      <Menu class="pl-20" />
+      <ColorModeSelector class="pt-1" />
     </header>
     <main class="p-2 mt-10">
       <slot />
@@ -13,6 +13,4 @@
   </div>
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>

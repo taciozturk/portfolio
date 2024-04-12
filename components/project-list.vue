@@ -29,7 +29,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 const { error, pending, data } = await useFetch(
   "https://api.github.com/users/taciozturk/repos"
 );

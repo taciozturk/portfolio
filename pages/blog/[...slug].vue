@@ -1,6 +1,7 @@
 <template>
-<div>Post id is {{ route.params.id }}</div>
-
+  <article>
+    <ContentDoc />
+  </article>
 </template>
 
 <script setup>
