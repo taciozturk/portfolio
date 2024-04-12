@@ -9,13 +9,19 @@
     <section v-else>
       <ul class="grid grid-cols-1 gap-4">
         <li
-          v-for="repo in data"
-          class="border border-2 rounded-sm border-gray-400 p-4 hover:border-primary hover:border-xl hover:text-primary"
+          v-for="repo in repos"
+          class="border border-2 rounded-sm border-gray-400 p-4 hover:border-primary hover:border-xl hover:text-primary font-mono"
         >
           <a :href="repo.html_url" target="_blank">
-            <div class="semi-bold ">
-              {{ repo.name }}
+            <div class="flex items-center justify-between">
+              <div class="semi-bold">
+                {{ repo.name }}
+              </div>
+              <div class="text-sm">{{ repo.stargazers_count }} *</div>
             </div>
+            <p class="text-xs text-gray-500">
+              {{ repo.description }}
+            </p>
           </a>
         </li>
       </ul>
@@ -27,5 +33,8 @@
 const { error, pending, data } = await useFetch(
   "https://api.github.com/users/taciozturk/repos"
 );
-console.log(data);
+const repos = computed(
+  () => data.value.filter((repo) => repo.description)
+);
+
 </script>

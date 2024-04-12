@@ -5,9 +5,14 @@
         <NuxtLink to="/">Taci Ozturk</NuxtLink>
       </div>
       <Menu />
+      <ColorModeSelector/>
     </header>
     <main class="p-2 mt-10">
       <slot />
     </main>
   </div>
 </template>
+
+<script setup>
+
+</script>
