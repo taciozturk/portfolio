@@ -1,3 +1,8 @@
+---
+title: Exploratory Data Analysis
+description: Exploratory data analysis procedures in Python
+---
+
 # Exploratory Data Analysis
 
 ## Data Understanding
@@ -5,7 +10,7 @@
 ### Primary analysis methods
 
 ```python
-df.shape
+df.shape()
 df.head() 
 df.dtypes()
 df.describe()
@@ -87,8 +92,6 @@ df.reset_index(drop = True)
 * Boxplot
 
 ```python
-
-
 # Bar Plot
 df.['Column Name'].value_counts().plot(kind = 'bar', title = 'title')
 
@@ -106,10 +109,10 @@ df.['Column Name'].value_counts().plot(kind = 'barh', title = 'title')
 sns.heatmap(df.corr(), annot=True)
 ```
 
-- Pairplot
+* Pairplot
 
 ```python
 sns.pairplot(df, vars=['Columns'])
 ```
 
-- Group-by Comparisons
+* Group-by Comparisons

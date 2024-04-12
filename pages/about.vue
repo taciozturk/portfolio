@@ -1,5 +1,6 @@
-<script setup></script>
 
 <template>
-  <h1>This page is about me</h1>
+  <article>
+    <ContentDoc path="/about" class="prose dark:prose-invert"/>
+  </article>
 </template>

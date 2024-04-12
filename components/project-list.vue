@@ -9,7 +9,8 @@
     <section v-else>
       <ul class="grid grid-cols-1 gap-4">
         <li
-          v-for="repo in repos"
+          v-for="repo in data"
+          :key="repo.id"
           class="border border-2 rounded-sm border-gray-400 p-4 hover:border-primary hover:border-xl hover:text-primary font-mono"
         >
           <a :href="repo.html_url" target="_blank">
