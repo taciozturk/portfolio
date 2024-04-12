@@ -17,6 +17,14 @@
           >About</ULink
         >
       </li>
+      <li>
+        <ULink
+          active-class="text-primary"
+          inactive-class="text-gray-600 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
+          to="/projects"
+          >Projects</ULink
+        >
+      </li>
     </ul>
   </nav>
 </template>
