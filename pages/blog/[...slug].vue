@@ -2,22 +2,25 @@
   <article
     class="prose dark:prose-invert max-w-none prose-pre:bg-gray-800 dark:prose-pre:bg-gray-700"
   >
-    <ContentDoc v-slot="{ doc }">
-      <div class="grid grid-cols-8 gap-16">
-        <div :class="{ 'col-span-6': doc.toc, 'col-span-8': !doc.toc }">
-          <ContentRenderer :value="doc" />
+    <ContentDoc>
+      <template #not-found> Content not found :(</template>
+      <template v-slot="{ doc }">
+        <div class="grid grid-cols-8 gap-16">
+          <div :class="{ 'col-span-6': doc.toc, 'col-span-8': !doc.toc }">
+            <ContentRenderer :value="doc" />
+          </div>
+          <div v-if="doc.toc" class="col-span-2 not-prose">
+            <aside class="sticky top-8">
+              <div class="font-semibold mb-2 text-primary-300">
+                Table of Contents
+              </div>
+              <nav>
+                <TocLinks :active-id="activeId" :links="doc.body.toc.links" />
+              </nav>
+            </aside>
+          </div>
         </div>
-        <div v-if="doc.toc" class="col-span-2 not-prose">
-          <aside class="sticky top-8">
-            <div class="font-semibold mb-2 text-primary-300">
-              Table of Contents
-            </div>
-            <nav>
-              <TocLinks :active-id="activeId" :links="doc.body.toc.links" />
-            </nav>
-          </aside>
-        </div>
-      </div>
+      </template>
     </ContentDoc>
   </article>
 </template>
