@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
   modules: ["@nuxt/ui", "@nuxt/content"],
   devtools: { enabled: true },
+  app: {
+    pageTransition: { name: "page", mode: "out-in" },
+  },
   content: {
     highlight: {
       langs: ["c", "cpp", "java", "python", "swift"],
