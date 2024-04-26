@@ -9,10 +9,7 @@
         </div>
         <Menu class="pl-2" />
       </div>
-
-      <ClientOnly>
-        <ColorModeSelector class="pt-1" />
-      </ClientOnly>
+      <ColorModeSelector class="pt-1" />
     </header>
     <main class="p-2 mt-10">
       <slot />

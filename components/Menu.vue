@@ -13,6 +13,14 @@
         <ULink
           active-class="text-primary"
           inactive-class="text-gray-600 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
+          to="/three-d"
+          >3D
+        </ULink>
+      </li>
+      <li>
+        <ULink
+          active-class="text-primary"
+          inactive-class="text-gray-600 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
           to="/blog"
           >Blog
         </ULink>
@@ -38,3 +46,4 @@
 </template>
 
 <style scoped></style>
+<script lang="ts" setup></script>
